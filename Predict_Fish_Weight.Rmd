@@ -103,8 +103,36 @@ The best two regressor models are L1 and L3 because they ahd the biggest adjustm
 
 ## Roach
 
+```{r}
+Roach = filter(All_Fish,Species=="Roach")
+```
+
+```{r}
+Roach = select(Roach, -Species)
+```
+
+```{r}
+library(leaps)
+regsubsets.out <-
+    regsubsets(Weight ~ .,
+               data = Roach,
+               nbest = 1,       # 1 best model for each number of predictors
+               nvmax = NULL,    # NULL for no limit on number of variables
+               force.in = NULL, force.out = NULL,
+               method = "exhaustive")
+
+summary.out <- summary(regsubsets.out)
+as.data.frame(summary.out$outmat)
+library(car)
+subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
+```
+
 ### Best Models
+
+The best model that we seeis L3, and W. This is because it is at the top of the graph, and only W is near the combo.
 
 ### Best Two regressor model
 
 ## Final Summary Statements
+
+

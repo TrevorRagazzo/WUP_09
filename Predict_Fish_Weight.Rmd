@@ -99,7 +99,7 @@ The best model is the L1,L2,L3,H,W because we see this is rated highest on the g
 
 ### Best Two regressor model
 
-The best two regressor models are 
+The best two regressor models are L1 and L3 because they ahd the biggest adjustment to rsquared.
 
 ## Roach
 

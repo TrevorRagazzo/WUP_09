@@ -129,10 +129,12 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 
 ### Best Models
 
-The best model that we seeis L3, and W. This is because it is at the top of the graph, and only W is near the combo.
+The best model that we see is L3, and W. This is because it is at the top of the graph, and only W is near the combo.
 
 ### Best Two regressor model
 
+The best two regressor model is still L3, and W. This is the best model out of all the other ones.
+
 ## Final Summary Statements
 
-
+In conclusion I have seen almost a similar result in all graphs, I have seen Width being in every graph and the best model. Overall it shows width plays a big factor in measuring the fish as shown in these graphs. 
